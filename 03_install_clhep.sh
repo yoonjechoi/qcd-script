@@ -18,3 +18,11 @@ make -j40
 
 sudo make install
 sudo ln -s /usr/local/clhep-2.4.1.0 /usr/local/clhep
+
+sudo tee /etc/ld.so.conf.d/clhep.conf >/dev/null <<EOF 
+/usr/local/clhep/lib
+EOF
+
+sudo tee /etc/profile.d/clhep.sh >/dev/null <<EOF 
+export PATH=/usr/local/clhep/bin:\$PATH
+EOF

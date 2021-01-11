@@ -25,3 +25,8 @@ make -j40
 
 sudo make install
 sudo ln -s /usr/local/geant4-10.5.1 /usr/local/geant4
+
+sudo tee /etc/profile.d/geant4.sh >/dev/null <<EOF 
+source /usr/local/geant4/bin/geant4.sh
+EOF
+

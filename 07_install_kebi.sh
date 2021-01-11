@@ -15,10 +15,10 @@ export KEBIPATH=$(pwd)
 echo "Rint.Logon: ${KEBIPATH}/macros/rootlogon.C" >> ~/.rootrc
 
 
-sudo apt install libboost-dev libboost-all-dev libeigen3-dev
+#sudo apt install libboost-dev libboost-all-dev libeigen3-dev
 
 mkdir -p build && \
     cd build 
 
 cmake .. && \
-    make -j40
+    make -j20

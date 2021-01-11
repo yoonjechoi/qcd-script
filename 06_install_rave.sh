@@ -20,3 +20,6 @@ make -j40
 
 sudo make install
 
+sudo tee /etc/ld.so.conf.d/rave.conf >/dev/null <<EOF 
+/usr/local/rave/lib
+EOF
